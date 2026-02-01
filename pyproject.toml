@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tacmap"
+version = "1.0.0"
+description = "Read-only tactical map overlay for War Thunder"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+keywords = ["warthunder", "tactical", "map", "overlay", "game"]
+authors = [
+  {name = "binxix", email = "antmanitis7@gmail.com"}
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+  "pygame>=2.5.0"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "black", "flake8", "mypy"]
+
+[project.urls]
+Homepage = "https://github.com/binx-ux/tacmap"
+Documentation = "https://github.com/binx-ux/tacmap#readme"
+Repository = "https://github.com/binx-ux/tacmap"
+"Bug Tracker" = "https://github.com/binx-ux/tacmap/issues"
+
+[project.scripts]
+tacmap = "tacmap.main:main"
+tacmap-scanner = "tacmap.scanner:main"
+
+[tool.setuptools]
+packages = ["tacmap"]
+
+[tool.setuptools.package-data]
+tacmap = ["config/*.json"]

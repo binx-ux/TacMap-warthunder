@@ -1,0 +1,42 @@
+{
+  "process_name": "aces_BE.exe",
+  "addresses": {
+    "player": {
+      "x_position": "0x00000000",
+      "y_position": "0x00000000",
+      "z_position": "0x00000000",
+      "x_velocity": "0x00000000",
+      "y_velocity": "0x00000000",
+      "z_velocity": "0x00000000",
+      "health": "0x00000000",
+      "team": "0x00000000"
+    },
+    "entity_list": {
+      "base_address": "0x00000000",
+      "count_address": "0x00000000",
+      "entity_size": 0,
+      "offsets": {
+        "x_position": 0,
+        "y_position": 0,
+        "z_position": 0,
+        "team": 0,
+        "type": 0,
+        "health": 0
+      }
+    }
+  },
+  "map_settings": {
+    "default_zoom": 1.0,
+    "map_scale": 10,
+    "update_rate_ms": 16
+  },
+  "display": {
+    "width": 1920,
+    "height": 1080,
+    "fullscreen": false,
+    "show_grid": true,
+    "show_velocity": true,
+    "show_health": true,
+    "max_entities": 100
+  }
+}
